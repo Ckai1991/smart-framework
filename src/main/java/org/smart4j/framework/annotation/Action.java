@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 /**
  * Action方法注解
- *
+ *   --该注解可用于方法声明
  * Created by admin on 2015/9/28.
  */
 @Target(ElementType.METHOD)
