@@ -69,6 +69,8 @@ public final class AopHelper {
     private static void addTransactionProxy(Map<Class<?>,Set<Class<?>>> proxyMap){
         Set<Class<?>> serviceClassSet = ClassHelper.getClassSetByAnnotation(Service.class);
 
+        //待验证：
+        //是否应与addAspectProxy方法一样进行判断
         proxyMap.put(Transaction.class,serviceClassSet);
     }
 

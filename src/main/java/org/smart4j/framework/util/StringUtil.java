@@ -22,4 +22,16 @@ public final class StringUtil {
     public static boolean isNotEmpty(String str){
         return !isEmpty(str);
     }
+
+    /**
+     * 字符串分隔符
+     */
+    public static final String SEPARATOR = String.valueOf((char) 29);
+
+    /**
+     * 分割固定格式的字符串
+     */
+    public static String[] splitString(String str, String separator) {
+        return StringUtils.splitByWholeSeparator(str, separator);
+    }
 }
